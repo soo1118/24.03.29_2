@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>묻고답하기</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/action.js"></script>
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    <header>
+        <!-- include/header.html -->
+      </header>
+    
+    <div id="visual_sub">
+        <div class="centerbox">
+            <div class="text">
+                <strong></strong>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div id="section_sub" class="board_page">
+
+        <div id="content_box">
+            <div class="centerbox">
+                <h2></h2>
+                
+                <div class="content">
+                    <form action="board_write.html">
+                        <fieldset>
+                            <legend>글쓰기</legend>
+                            <ul class="write_box">
+                                <li>
+                                    <label for="" class="title"><span>구분</span></label>
+                                <div class="input_area">
+                                    <label for="division1">
+                                        <input type="radio" class="radio_button" id="division1" name="division" checked value="notice">
+                                        <span class="radio_sign"></span>
+                                        공지사항
+                                    </label>
+                                    <label for="division2">
+                                        <input type="radio" class="radio_button" id="division2" name="division" value="secret">
+                                        <span class="radio_sign"></span>
+                                        비밀글
+                                    </label>
+                                </div>
+                                </li>
+                                <li>
+                                    <label for="forum_title" class="title">제목</label>
+                                    <div class="input_area">
+                                        <input type="text" id="forum_title">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="forum_user" class="title">작성자</label>
+                                    <div class="input_area">
+                                        <input type="text" id="forum_user">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="forum_content" class="title">내용</label>
+                                    <div class="input_area">
+                                        <textarea name="" id="forum_content" ></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="title">파일첨부</label>
+                                    <div class="input_area">
+                                        <input type="file" id="file_select">
+                                        <span class="file_zone">파일을 선택해주세요</span>
+                                        <label for="file_select">찾아보기</label>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="btns_box">
+                                <a href="board_list.html" class="btn_view2 color1">목록</a>
+                                <button class="btn_view2 color2" onclick="window.open('board_list.html')">확인</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+       <div class="centerbox">
+            <h2>
+                <img src="images/footer_logo(whight).png" alt="">
+            </h2>
+            <p>
+                주소: 꿈나무 유치원 서울시 강남구 꿈나무로 123 (우편번호 12345)
+                전화번호: 02-1234-5678
+            </p>
+       </div>
+    </footer>
+
+
+</body>
+</html>
